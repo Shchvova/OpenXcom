@@ -6,7 +6,6 @@ on:
   workflow_dispatch:
 jobs:
   windows:
-    if: false
     name: Windows
     runs-on: windows-latest
     steps:
@@ -126,7 +125,6 @@ jobs:
           path: artifacts/*
 
   linux:
-    if: false
     name: Linux
     runs-on: ubuntu-22.04
     steps:
