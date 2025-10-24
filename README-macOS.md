@@ -6,7 +6,7 @@ To successfully build an OpenXcom macOS bundle you will need relevant dependenci
 
 The dependencies you require are following:
 - cmake, version 3.12.0 or later
-- SDL (libsdl1.2)
+- SDL (libsdl1.2 or sdl12-compat)
 - SDL_mixer (libsdl-mixer1.2)
 - SDL_gfx (libsdl-gfx1.2), version 2.0.22 or later
 - SDL_image (libsdl-image1.2)
@@ -16,7 +16,7 @@ CMake is used to configure the project. Download it [manually](https://cmake.org
 
 The easiest way of getting library dependencies is [MacPorts](https://www.macports.org/):
 ```sh
-port install libsdl libsdl_gfx libsdl_image libsdl_mixer yaml-cpp
+port -N install libsdl libsdl_gfx libsdl_image libsdl_mixer yaml-cpp
 ```
 
 Following instructions assume MacPorts is installed in default prefix `/opt/local`. If you installed ports into different location, replace it.
